@@ -1,12 +1,5 @@
 # WSCoachMarksView
 
-## Updates
-1. Added skip functionality
- - Enabled by default
- - Coaching can be skipped at any point before the end
- - Continue label returns to full width when skip is disabled.
-[![](https://cloud.githubusercontent.com/assets/350858/4058573/e248f2b0-2dd7-11e4-9a45-27336e6f40e3.png)](https://cloud.githubusercontent.com/assets/350858/4058573/e248f2b0-2dd7-11e4-9a45-27336e6f40e3.png)
-
 WSCoachMarksView is an iOS drop-in class that displays user coach marks with a rectangular cutout over an existing UI. This approach leverages your actual UI as part of the onboarding process for your user. Simply define an array of rectangles (CGRect) and their accompanying captions.
 
 [Demo video of WSCoachMarksView in action in HitchedPic app.](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarks.mov)
@@ -18,6 +11,8 @@ WSCoachMarksView is an iOS drop-in class that displays user coach marks with a r
 [![](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarksScreen4_small.png)](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarksScreen4.png)
 [![](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarksScreen5_small.png)](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarksScreen5.png)
 [![](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarksScreen6_small.png)](https://dl.dropboxusercontent.com/u/26188/CoachMarks/coachMarksScreen6.png)
+
+[![](https://cloud.githubusercontent.com/assets/350858/4058573/e248f2b0-2dd7-11e4-9a45-27336e6f40e3.png)](https://cloud.githubusercontent.com/assets/350858/4058573/e248f2b0-2dd7-11e4-9a45-27336e6f40e3.png)
 
 ## Requirements
 
@@ -157,6 +152,10 @@ Define how far the captions label appears above or below the cutout (default: 35
 ### `enableContinueLabel` (BOOL)
 
 'Tap to continue' label pops up by default to guide the user at the first coach mark (default: YES).
+
+### `enableSkipButton` (BOOL)
+
+'Skip' button allows the user skip to the end of coaching (default: YES).
 
 ## WSCoachMarksViewDelegate
 
